@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!--设置当前html文件的文字编码-->
+    <meta charset="utf-8">
+    <!--设置浏览器的兼容模式版本，让ie使用最新的渲染引擎-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <!--申明当前网页在移动端浏览器中展示的相关设置-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--meta:vp width=device-width,initial-scale=1,user-scalable = no,maximum-scale = 1.0;minimum-scale = 1.0-->
+    <!--视口的作用：在移动浏览器中，当页面的宽度超出设备，浏览器内部虚拟的一个页面容器，将页面容器缩放到设备这么大然后进行展示 目前大多数手机浏览器的视口宽度都是980px-->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>陆金所</title>
+    <!--<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <!-- 引入Bootstrap -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--条件注释的作用当判断条件满足时，就会执行注释中的html代码,条件不满足是会直接当做注释去处理-->
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv-3.7.3/dist/html5shiv.min.js"></script>
+    <script src="lib/Respond-1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!--头部区域-->
+    <header id="header">
+        <!--<div class="topbar hidden-sm hidden-xs">-->
+        <div class="topbar visible-md visible-lg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 text-center">
+                        <a href="" class="moblie-link">
+                            <i class="icon-mobilephone"></i>
+                            <span>手机微金所</span>
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                            <img src="img/c_06.jpg" alt="扫一扫二维码">
+                        </a>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <i class="icon-telephone"></i>
+                        <span>4006-89-4006 （服务时间：9:00-21:00）</span>
+                    </div>
+                    <div class="col-md-2 text-center denglu">
+                        <a href="#" class="btn ">常见问题</a>
+                        <a href="#">财富登陆</a>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <a href="#" class="btn btn-sample btn-sm">免费注册</a>
+                        <a href="#" class="btn btn-link btn-sm">登陆</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-itcast navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <!--汉堡菜单-->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">切换菜单</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <i class="icon-icon"></i>
+                        <i class="icon-logo"></i>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">我要投资</a></li>
+                        <li class="active"><a href="#">我要借款</a></li>
+                        <li class="active"><a href="#">平台介绍</a></li>
+                        <li class="active"><a href="#">新手专区</a></li>
+                        <li class="active"><a href="#">最新动态</a></li>
+                        <li class="active"><a href="#">微论坛</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right hidden-sm">
+                        <li><a href="#">个人中心</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!--/头部区域结束-->
+<!--广告轮播-->
+    <section id="main_ad" class="carousel slide" data-ride="carousel">
+            <!-- 小圆点活动指示器 -->
+            <ol class="carousel-indicators">
+                <li data-target="#main_ad" data-slide-to="0" class="active"></li>
+                <li data-target="#main_ad" data-slide-to="1"></li>
+                <li data-target="#main_ad" data-slide-to="2"></li>
+                <li data-target="#main_ad" data-slide-to="3"></li>
+            </ol>
+            <!-- 轮播内容 轮播项 -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active" data-images-lg="img/slide_01_2000x410.jpg" data-images-xs="img/slide_01_640x340.jpg">
+                </div>
+                <div class="item" data-images-lg="img/slide_02_2000x410.jpg" data-images-xs="img/slide_02_640x340.jpg">
+                </div>
+                <div class="item" data-images-lg="img/slide_03_2000x410.jpg" data-images-xs="img/slide_04_640x340.jpg">
+                </div>
+                <div class="item" data-images-lg="img/slide_04_2000x410.jpg" data-images-xs="img/slide_04_640x340.jpg">
+                </div>
+            </div>
+            <!-- 控制 左右切换 -->
+            <a class="left carousel-control" href="#main_ad" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">上一页</span>
+            </a>
+            <a class="right carousel-control" href="#main_ad" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">下一页</span>
+            </a>
+    </section>
+<!--特色介绍-->
+    <section id="test" class="hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="icon-un907"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">支付交易保证</h4>
+                            <p>银联支付全程保障支付安全</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="icon-un907"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">平台财产安全</h4>
+                            <p>由PICC保驾护航</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="icon-un907"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">交易安全</h4>
+                            <p>由中国人寿对借款人承保</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="icon-un907"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">安全保障</h4>
+                            <p>独创八层安全保障机制</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="icon-un907"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">筛选优质资产</h4>
+                            <p>对接上海资信征信系统</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="icon-un907"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">联合信息发布</h4>
+                            <p>通过路透社共同发布利率指数报告</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--立即预约-->
+    <section class="make">
+        <div class="container">
+                <p class="pull-left"><i class="icon-un906 pull-left"></i>现在有<span>458</span>人在排队，累计预约交易成功<span>7409</span>次。 什么是预约投标？ <span>立即预约</span></p>
+            <a href="" class="btn-link pull-right hidden-xs"><i class="icon-un905"></i> 微金所企业宣传片</a>
+        </div>
+    </section>
+<!--产品推荐-->
+    <section id="products">
+        <div class="container">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#tab_01" aria-controls="home" role="tab" data-toggle="tab">特别推荐</a></li>
+                <li role="presentation"><a href="#tab_02" aria-controls="profile" role="tab" data-toggle="tab">微投资</a></li>
+                <li role="presentation"><a href="#tab_03" aria-controls="messages" role="tab" data-toggle="tab">微小包</a></li>
+                <li role="presentation"><a href="#tab_04" aria-controls="settings" role="tab" data-toggle="tab">微消费</a></li>
+                <li role="presentation"><a href="#tab_04" aria-controls="settings" role="tab" data-toggle="tab">微福利</a></li>
+                <li role="presentation"><a href="#tab_04" aria-controls="settings" role="tab" data-toggle="tab">微金宝</a></li>
+                <li role="presentation"><a href="#tab_04" aria-controls="settings" role="tab" data-toggle="tab">微转让</a></li>
+                <li class="pull-right"><a href="#">更多</a></li>
+            </ul>
+            <!-- 选项卡内容 -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="tab_01">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4 col-sm-6">
+                            <div class="panel panel-aj actived">
+                                <div class="panel-heading text-center"><span>8</span><sub>%</sub></div>
+                                <div class="panel-body">
+                                    <h5>新手体验表0008期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-sm-6">
+                            <div class="panel panel-aj disabled">
+                                <div class="panel-heading text-center"><span>8</span><sub>%</sub></div>
+                                <div class="panel-body">
+                                    <h5>新手体验表0008期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-sm-6">
+                            <div class="panel panel-aj disabled">
+                                <div class="panel-heading text-center"><span>8</span><sub>%</sub></div>
+                                <div class="panel-body">
+                                    <h5>新手体验表0008期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-sm-6">
+                            <div class="panel panel-aj disabled">
+                                <div class="panel-heading text-center"><span>8</span><sub>%</sub></div>
+                                <div class="panel-body">
+                                    <h5>新手体验表0008期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-sm-6">
+                            <div class="panel panel-aj disabled">
+                                <div class="panel-heading text-center"><span>8</span><sub>%</sub></div>
+                                <div class="panel-body">
+                                    <h5>新手体验表0008期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-sm-6">
+                            <div class="panel panel-aj disabled">
+                                <div class="panel-heading text-center"><span>8</span><sub>%</sub></div>
+                                <div class="panel-body">
+                                    <h5>新手体验表0008期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <p>起始金额</p>
+                                            <p><strong>1000.00</strong><sub>万</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="tab_02">火狐金融金融</div>
+                <div role="tabpanel" class="tab-pane fade" id="tab_03">火狐金融金融</div>
+                <div role="tabpanel" class="tab-pane fade" id="tab_04">呃呃呃金融金融</div>
+            </div>
+        </div>
+    </section>
+<!--新闻列表-->
+    <section></section>
+<!--合作伙伴-->
+    <section></section>
+<!--合作伙伴-->
+<!--脚注区域-->
+    <footer></footer>
+<!--/脚注区域-->
+<script src="lib/jquery/jquery-1.4.1.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
